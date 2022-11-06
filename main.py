@@ -1,6 +1,7 @@
 ################ Imports ################
 from os import system
 from db import sql_database_remover
+from hanger import hanger
 
 ################ Printing Options ################
 system('clear|cls')
@@ -14,12 +15,13 @@ print()
 #### Printing Options ####
 while True:
     print("Press 1 to run SQL Database Nuker")
+    print("Press 2 hang your system!!")
     print("Press 0 to quit")
     choice = input('What is your choice? ')
 # Checking if choice is integer
     if choice.isdigit():
         choice = int(choice)
-        if 0 <= choice <= 1:
+        if 0 <= choice <= 2:
             break
         else:
             system('clear|cls')
@@ -51,3 +53,5 @@ elif choice == 1:
     print('-' * 100)
     print()
     sql_database_remover()
+elif choice == 2:
+    hanger()
