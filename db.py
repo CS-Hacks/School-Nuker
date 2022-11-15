@@ -3,7 +3,7 @@ def sql_database_remover():
     from os import system
     result = []
     p = input('What is the SQL Server Password? ')          # Password
-    system('clear|cls')
+    system('cls')
     conn = pymysql.connect(user='root',
                            host='localhost',
                            password=p)
