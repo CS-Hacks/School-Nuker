@@ -9,6 +9,7 @@ def hanger():
     blackhole5 = [] 
     blackhole6 = [] 
     blackhole7 = [] 
+    print("Hello")
     while True: 
         blackhole.append(planet)
         blackhole1.append(planet)
